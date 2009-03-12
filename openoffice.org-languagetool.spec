@@ -102,3 +102,4 @@ idlangtool=$(%unopkg list --shared 2> /dev/null | sed -ne 's/^Identifier: \(org.
 %defattr(-,root,root)
 %{_libdir}/%{ooodir}/%{unopkgname}
 
+
