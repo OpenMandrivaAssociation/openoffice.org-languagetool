@@ -12,8 +12,8 @@
 ## %define binname	%{ooname}-languagetool
 %define name	%{ooname}-languagetool
 
-%define version	3.0.1
-%define rel	0.9.7.1
+%define version	0.9.7
+%define rel	1
 
 %define unopkgname	LanguageTool-0.9.7.oxt
 
