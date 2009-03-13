@@ -29,6 +29,7 @@ URL:		http://www.languagetool.org/
 Source:         languagetool-0.9.7.tar.bz2
 Patch0: 	ooo-jars-path.patch
 BuildRoot:	%{_tmppath}/%{name}-root
+BuildRequires:  java-1.6.0-openjdk-devel
 BuildRequires:	%ooname-common = %ooo_version
 BuildRequires:	%ooname-java-common = %ooo_version
 BuildRequires:	ant
