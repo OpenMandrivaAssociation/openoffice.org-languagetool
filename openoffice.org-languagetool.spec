@@ -13,7 +13,7 @@
 %define name	%{ooname}-languagetool
 
 %define version	0.9.7
-%define rel	1
+%define rel	2
 
 %define unopkgname	LanguageTool-0.9.7.oxt
 
