@@ -10,7 +10,7 @@
 %endif
 
 ## %define binname	%{ooname}-languagetool
-%define name	%{ooname}-languagetool
+%define name	openoffice.org-languagetool
 
 %define version	0.9.7
 %define rel	2
