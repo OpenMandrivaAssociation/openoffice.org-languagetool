@@ -7,13 +7,14 @@
 %ifarch x86_64
 %define ooname openoffice.org64
 %define ooodir	ooo-%{ooo_shortver}_64
+%define unopkg	unopkg%{ooo_shortver}_64
 %endif
 
 ## %define binname	%{ooname}-languagetool
 %define name	openoffice.org-languagetool
 
 %define version	0.9.7
-%define rel	2
+%define rel	3
 
 %define unopkgname	LanguageTool-0.9.7.oxt
 
