@@ -14,7 +14,7 @@
 %define name	openoffice.org-languagetool
 
 %define version	0.9.7
-%define rel	3
+%define rel	4
 
 %define unopkgname	LanguageTool-0.9.7.oxt
 
