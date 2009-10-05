@@ -1,22 +1,16 @@
 %define ooname	openoffice.org
-%define ooo_version 1:3.0.1
-%define ooo_shortver 3.0.1 
-%define ooodir	ooo-%{ooo_shortver}
-%define unopkg	unopkg%{ooo_shortver}
-
-%ifarch x86_64
-%define ooname openoffice.org64
-%define ooodir	ooo-%{ooo_shortver}_64
-%define unopkg	unopkg%{ooo_shortver}_64
-%endif
+%define ooo_version 1:3.1
+%define ooo_shortver 3.1 
+%define ooodir	ooo
+%define unopkg	unopkg
 
 ## %define binname	%{ooname}-languagetool
 %define name	openoffice.org-languagetool
 
-%define version	0.9.7
-%define rel	4
+%define version	0.9.9
+%define rel	1
 
-%define unopkgname	LanguageTool-0.9.7.oxt
+%define unopkgname	LanguageTool-0.9.9.oxt
 
 Summary:	Rule-based language checker for English, German, Polish, Dutch and other languages
 Name:		%name
@@ -26,8 +20,8 @@ License:	LGPL
 Group:		Office
 URL:		http://www.languagetool.org/
 # tarball created from: 
-# cvs -z3 -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool co -r V_0_9_7 -P JLanguageTool
-Source:         languagetool-0.9.7.tar.bz2
+# cvs -z3 -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool co -r V_0_9_9 -P JLanguageTool
+Source:         languagetool-0.9.9.tar.bz2
 Patch0: 	ooo-jars-path.patch
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:  java-1.6.0-openjdk-devel
@@ -51,7 +45,7 @@ can be written in Java.
 %setup -q -n JLanguageTool
 %patch0 -p0 
 
-# ooo 3.0.1 path
+# ooo 3.1 path
 sed -i 's@^ext\.ooo\.dir = .*$@ext\.ooo\.dir = %{_libdir}/%{ooodir}@' %{_builddir}/JLanguageTool/build.properties
 
 %build
