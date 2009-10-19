@@ -1,6 +1,6 @@
 %define ooname	openoffice.org
-%define ooo_version 1:3.1
-%define ooo_shortver 3.1 
+%define ooo_version 1:3.1.1
+%define ooo_shortver 3.1.1
 %define ooodir	ooo
 %define unopkg	unopkg
 
@@ -8,14 +8,13 @@
 %define name	openoffice.org-languagetool
 
 %define version	0.9.9
-%define rel	1
 
 %define unopkgname	LanguageTool-0.9.9.oxt
 
 Summary:	Rule-based language checker for English, German, Polish, Dutch and other languages
 Name:		%name
 Version:	%version
-Release:	%mkrel %rel
+Release:	%mkrel 2 
 License:	LGPL
 Group:		Office
 URL:		http://www.languagetool.org/
