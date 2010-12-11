@@ -14,7 +14,7 @@
 Summary:	Rule-based language checker for English, German, Polish, Dutch and other languages
 Name:		%name
 Version:	%version
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	LGPL
 Group:		Office
 URL:		http://www.languagetool.org/
