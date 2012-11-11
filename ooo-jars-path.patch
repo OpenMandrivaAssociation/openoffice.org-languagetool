@@ -1,0 +1,29 @@
+diff -p -up ./build.properties.orig ./build.properties
+--- ./build.properties.orig	2009-10-05 10:36:35.000000000 -0400
++++ ./build.properties	2009-10-05 10:36:47.000000000 -0400
+@@ -58,10 +58,10 @@ ext.ccl.lib = ${ext.dir}/build/cobertura
+ ext.javancss.lib = ${ext.dir}/build/cobertura/javancss.jar
+ ext.log4j.lib = ${ext.dir}/build/cobertura/log4j-1.2.9.jar
+ 
+-ext.ooo.juh.lib = ${ext.ooo.dir}/juh.jar
+-ext.ooo.unoil.lib = ${ext.ooo.dir}/unoil.jar
+-ext.ooo.ridl.lib = ${ext.ooo.dir}/ridl.jar
+-ext.ooo.jurt.lib = ${ext.ooo.dir}/jurt.jar
++ext.ooo.juh.lib = ${ext.ooo.dir}/ure/share/java/juh.jar
++ext.ooo.unoil.lib = ${ext.ooo.dir}/basis3.1/program/classes/unoil.jar
++ext.ooo.ridl.lib = ${ext.ooo.dir}/ure/share/java/ridl.jar
++ext.ooo.jurt.lib = ${ext.ooo.dir}/ure/share/java/jurt.jar
+ 
+ build.meta-inf = ${build.dir}/META-INF
+ final.name = LanguageTool
+diff -p -up ./build.xml.orig ./build.xml
+--- ./build.xml.orig	2009-10-05 10:36:24.000000000 -0400
++++ ./build.xml	2009-10-05 10:36:43.000000000 -0400
+@@ -221,6 +221,7 @@
+ 		<javac encoding="${encoding}" srcdir="${src.test.dir}" includes="de/danielnaber/languagetool/rules/patterns/PatternRuleTest.java
+   		de/danielnaber/languagetool/ValidateXMLTest.java
+   		de/danielnaber/languagetool/XMLValidator.java" destdir="${build.classes}" target="${target}" debug="${debug}">
++			<classpath refid="junit.classpath" />
+ 			<classpath refid="classpath" />
+ 		</javac>
+ 
