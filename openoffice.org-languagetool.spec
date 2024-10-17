@@ -17,7 +17,7 @@ Version:	%version
 Release:	%mkrel 4
 License:	LGPL
 Group:		Office
-URL:		http://www.languagetool.org/
+URL:		https://www.languagetool.org/
 # tarball created from: 
 # cvs -z3 -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool co -r V_0_9_9 -P JLanguageTool
 Source:         languagetool-0.9.9.tar.bz2
